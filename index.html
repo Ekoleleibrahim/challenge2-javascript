@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change color the background page</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            min-height: 100vh;
+        }
+        input{
+            outline: none;
+            width: 300px;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid grey;
+        }
+        button{
+            outline: none;
+            border: none;
+            padding: 12px;
+            background-color: rgb(39, 38, 38);
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:active{
+            transform: scale(0.99);
+        }
+    </style>
 </head>
 <body>
-    
+    <div>
+        <input type="text" id="text-color">
+    </div>
+    <div>
+        <button>Click to Change The Background Color</button>
+    </div>
 </body>
 </html>
